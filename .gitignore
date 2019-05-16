@@ -1,0 +1,6 @@
+hosts
+.DS_Store
+*.retry
+.vaultpass
+secret
+*.secret

@@ -1,0 +1,9 @@
+---
+- hosts: cluster
+  vars_files: 
+    - ./roles/users/vars/vars.yml
+    - ./roles/users/vars/vault.yml
+  become: yes
+  roles:
+    - users
+

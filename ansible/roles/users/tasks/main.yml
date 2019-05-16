@@ -1,0 +1,34 @@
+---
+- name: creating users
+  user:
+    name: marco
+    password: "{{ vault_user_password }}"
+    home: /home/marco
+    update_password: on_create
+    comment: Marco Matos
+    shell: /bin/bash
+    state: present
+    groups: sudo 
+
+- name: creating .ssh/ dir
+  file:
+    path: /home/marco/.ssh/
+    state: directory
+    owner: marco
+    group: marco
+    mode: "0700"
+
+- name: updating authorized_keys file
+  template:
+    src: id_rsa.pub.j2
+    dest: /home/marco/.ssh/authorized_keys
+    mode: "0644"
+    owner: marco
+
+- name: Allow NOPASSWD to 'sudo' group
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^%sudo'
+    line: '%sudo ALL=(ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
