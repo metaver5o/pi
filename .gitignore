@@ -4,3 +4,4 @@ hosts
 .vaultpass
 secret
 *.secret
+ansible.cfg
