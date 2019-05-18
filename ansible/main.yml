@@ -1,5 +1,5 @@
 ---
-- hosts: cluster
+- hosts: local
   vars_files: 
     - ./roles/users/vars/vars.yml
     - ./roles/users/vars/vault.yml
