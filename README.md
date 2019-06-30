@@ -1,1 +1,1 @@
-![my setup](pi.jpg?raw=true "Raspberry")
+![my setup](pi2.jpg?raw=true "Raspberry")
