@@ -11,6 +11,6 @@ all data is encrypted, /home is mounted and encrypted as USB 128GB flash device.
 # Management
 will update all my playbooks to manage this setup under ansible folder. <br>
 
-[strip](pics/strip.jpg?raw=true)
+![strip](pics/strip.jpg?raw=true "strip")
 
 # Security Concerns
