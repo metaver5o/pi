@@ -14,4 +14,4 @@ will update all my playbooks used to manage this setup under <a href=ansible>ans
 <!-- ![strip](pics/strip.jpg?raw=true "strip") -->
 # Security Concerns
 data is encrypted (good luck!) <br>
-hardware device needed as 2FA in order to login locally or via ssh <br>
+hardware device needed as 2FA in order to login locally or via ssh (ad-hoc) <br>
