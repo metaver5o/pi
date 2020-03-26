@@ -5,3 +5,4 @@ hosts
 secret
 *.secret
 ansible.cfg
+ansible_hosts
